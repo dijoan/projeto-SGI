@@ -207,8 +207,6 @@ th,td {
 border: 1px solid #cecece;
 padding: 2px;
 color:black;
-
-
 }
 
 table a {
@@ -229,3 +227,5 @@ th:hover{
 tbody tr:nth-child(odd) {
     background-color: #f2f2f2;
 }
+
+/* HTML formulários */
