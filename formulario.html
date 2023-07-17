@@ -13,48 +13,271 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant&display=swap" rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     </head>
     <body>
         <header>
             <img id="logo" src="img/logo-transwolff-sombra.png" alt="logo-transwolff" width="180">
             <h1>SISTEMA DE GESTÃO INTEGRADO</h1>
         </header>
-        <h2>Procedimentos do Sistema Integrado - PSI</h2>
+        <h2>Formulários</h2>
             <div class="responsavel">
                     <li>Data: 23/05/2023 - Rev.00</li>
                     <li>Responsável / Elaboração: Ricardo James </li>
                     <li>Responsável / Aprovado: Benedito L. da Silva  </li>
             </div>
         <div id="voltar-poli">
-            <a class="voltar" href="index.html"><i>Voltar</i></a>
+            <a href="index.html">
+                <span class="material-symbols-outlined">
+                    arrow_back_ios
+            </a>
+         </span>
         </div>
         <div class="container-procedimentos">
             <div class="porcedimetos">
                 <table>
-                    <tr><th>ORDEM</th><th>NÚMERO</th><th>TÍTULO</th><th>REVISÃO</th><th>STATUS</th></tr>
-                    <tr><th>01</th><th>PSI – 01</th><th><a href="pdf/política de gestão integrada/politica de gestão integrada.pdf" target="_blank">Controle de Documentos e Registros</a></th><th>00</th><th>-</th></tr>
-                    <tr><th>02</th><th>PSI – 02</th><th><a href=""target="_blank">Qualificação, Treinamento e Avaliação de Eficácia</a></th><th>00</th><th>-</th></tr>
-                    <tr><th>03</th><th>PSI – 03</th><th><a href=""target="_blank">Atendimento ao Cliente (Vide pag. 7 do MGI)</a></th><th>00</th><th>Cancelada</th></tr>
-                    <tr><th>04</th><th>PSI – 04</th><th><a href=""target="_blank">Ações Corretivas e Preventivas</a></th><th>00</th><th>-</th></tr>
-                    <tr><th>05</th><th>PSI – 05</th><th><a href=""target="_blank">Auditoria Interna</a></th><th>00</th><th>-</th></tr>
-                    <tr><th>06</th><th>PSI – 06</th><th><a href=""target="_blank">Programação e Análise das Linhas</a></th><th>00</th><th>-</th></tr>
-                    <tr><th>07</th><th>PSI – 07</th><th><a href=""target="_blank">Aquisição</a></th><th>01</th><th>-</th></tr>
-                    <tr><th>08</th><th>PSI – 08</th><th><a href=""target="_blank">Manutenção</a></th><th>00</th><th>-</th></tr>
-                    <tr><th>09</th><th>PSI – 09</th><th><a href=""target="_blank">Controle de Serviço Não Conforme</a></th><th>00</th><th>-</th></tr>
-                    <tr><th>10</th><th>PSI – 10</th><th><a href=""target="_blank">Planejamento Estratégico de Gestão - PEG</a></th><th>00</th><th>-</th></tr>
-                    <tr><th>11</th><th>PSI – 11</th><th><a href=""target="_blank">Análise crítica pela direção e melhoria contínua (Vide pag. 7 do MGI)</a></th><th>00</th><th>Cancelada</th></tr>
-                    <tr><th>12</th><th>PSI – 12</th><th><a href=""target="_blank">Levantamento e Análise de Aspectos e Impactos Ambientais.</a></th><th>00</th><th>-</th></tr>
-                    <tr><th>13</th><th>PSI – 13</th><th><a href=""target="_blank">Levantamento e Análise de Legislação Ambiental</a></th><th>00</th><th>-</th></tr>
-                    <tr><th>14</th><th>PSI – 14</th><th><a href=""target="_blank">Atendimento a Emergência</a></th><th>00</th><th>-</th></tr>
-                    <tr><th>15</th><th>PSI – 15</th><th><a href=""target="_blank">Comunicação</a></th><th>00</th><th>-</th></tr>
-                    <tr><th>16</th><th>PSI – 16</th> <th><a href=""target="_blank">Monitoramento e Medição</a></th><th>00</th><th>-</th></tr>
-                    <tr><th>17</th><th>PSI – 17</th><th><a href=""target="_blank">Controle Operacional</a></th><th>00</th><th>-</th></tr>
-                    <tr><th>18</th><th>PSI – 18</th><th><a href=""target="_blank">Descarga de Caminhão Tanque – (CT)</a></th><th>00</th><th>-</th></tr>
-                    <tr><th>19</th><th>PSI – 19</th><th><a href=""target="_blank">CCO</a></th><th>00</th><th>-</th></tr>
-                    <tr><th>20</th><th>PSI – 20</th> <th><a href=""target="_blank">FEC</a></th><th>00</th><th>-</th></tr>
-                    <tr><th>21</th><th>PSI – 21</th><th><a href=""target="_blank">Almoxarifado de peças</a></th><th>00</th><th>-</th></tr>
-                    <tr><th>22</th><th>PSI – 22</th><th><a href=""target="_blank">Controle de Informação Documentada</a></th><th>00</th><th>-</th></tr>
-                    <tr><th>23</th><th>IO – 01</th><th><a href=""target="_blank">Seleção / Contratação / Demissão</a></th>	<th>00</th><th>-</th></tr>
+                    <thead>
+                        <tr id="tabela-cabecalho"> <!--Cabeçalho-->
+                            <th>ORDEM</th>
+                            <th>NÚMERO DOC.</th>
+                            <th>TÍTULO</th>
+                            <th>REVISÃO</th>
+                            <th>STATUS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01</td><!--linha 01-->
+                            <td>FR – 01</td>
+                            <td class="link"><a href="pdf/política de gestão integrada/politica de gestão integrada.pdf"
+                                    target="_blank">Lista mestra de documentos</a></td>
+                            <td>00</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>02</td><!--linha 02-->
+                            <td>FR – 02</td>
+                            <td class="link"><a href="" target="_blank">LR - Lista de Registro</a></td>
+                            <td>00</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>03</td><!--linha 03-->
+                            <td>FR – 03</td>
+                            <td class="link"><a href="" target="_blank">Protocolo de Entrga e Recebimento</a></td>
+                            <td>00</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>04</td><!--linha 04-->
+                            <td>FR – 04</td>
+                            <td class="link"><a href="" target="_blank">Lista de Presença</a></td>
+                            <td>01</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>05</td> <!--linha 05-->
+                            <td>FR – 05</td>
+                            <td class="link"><a href="" target="_blank">Documentação</a></td>
+                            <td>01</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>06</td><!--linha 06-->
+                            <td>FR – 06</td>
+                            <td class="link"><a href="" target="_blank">Proposta de Emprego</a></td>
+                            <td>01</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>07</td>
+                            <td>FR – 07</td><!--linha 07-->
+                            <td class="link"><a href="" target="_blank">Solicitação de Preenchimento de vaga</a></td>
+                            <td>02</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>08</td><!--linha 08-->
+                            <td>FR – 08</td>
+                            <td class="link"><a href="" target="_blank">Descrição de Cargos e salários</a></td>
+                            <td>01</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>09</td><!--linha 09-->
+                            <td>FR – 09</td>
+                            <td class="link"><a href="" target="_blank">Histórico do Colaborador</a></td>
+                            <td>00</td>
+                            <td>Suspenso</td>
+                        </tr>
+                        <tr>
+                            <td>10</td><!--linha 10-->
+                            <td>FR – 10</td>
+                            <td class="link"><a href="" target="_blank">Avaliação de Eficácia</a></td>
+                            <td>01</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>11</td><!--linha 11-->
+                            <td>FR– 11</td>
+                            <td class="link"><a href="" target="_blank">Avaliação de Treinamento</a></td>
+                            <td>01</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>12</td><!--linha 12-->
+                            <td>FR – 12</td>
+                            <td class="link"><a href="" target="_blank">Avaliação de Desempenho</a>
+                            </td>
+                            <td>01</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>13</td><!--linha 13-->
+                            <td>FR – 13</td>
+                            <td class="link"><a href="" target="_blank">Plano de Ação de Competências</a></td>
+                            <td>00</td>
+                            <td>Suspenso</td>
+                        </tr>
+                        <tr>
+                            <td>14</td><!--linha 14-->
+                            <td>FR – 14</td>
+                            <td class="link"><a href="" target="_blank">Registro de Atendimento aos Clientes - 0800</a></td>
+                            <td>00</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>15</td><!--linha 15-->
+                            <td>FR – 15</td>
+                            <td class="link"><a href="" target="_blank">Controle de Atendimento</a></td>
+                            <td>00</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>16</td><!--linha 16-->
+                            <td>FR – 16</td>
+                            <td class="link"><a href="" target="_blank">Solicitaação de Ação Corretiva/Preventiva</a></td>
+                            <td>00</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>17</td><!--linha 17-->
+                            <td>FR – 18</td>
+                            <td class="link"><a href="" target="_blank">Programa de Auditoria Interna</a></td>
+                            <td>00</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>18</td><!--linha 18-->
+                            <td>FR – 19</td>
+                            <td class="link"><a href="" target="_blank">Protocolo de Auditoria Interna – (CT)</a></td>
+                            <td>00</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>19</td><!--linha 19-->
+                            <td>FR – 20</td>
+                            <td class="link"><a href="" target="_blank">Lista de Verificação ISO-9001</a></td>
+                            <td>00</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>20</td><!--linha 20-->
+                            <td>FR – 21</td>
+                            <td class="link"><a href="" target="_blank">Lista de Verificação ISO-14001</a></td>
+                            <td>00</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>21</td><!--linha 21-->
+                            <td>FR – 22</td>
+                            <td class="link"><a href="" target="_blank">Relatório de Auditoria Interna</a></td>
+                            <td>00</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>22</td><!--linha 22-->
+                            <td>FR – 23</td>
+                            <td class="link"><a href="" target="_blank">Agenda Auditoria Interna</a></td>
+                            <td>00</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>23</td><!--linha 23-->
+                            <td>FR – 26</td>
+                            <td class="link"><a href="" target="_blank">Relatório de Solicitação</a></td>
+                            <td>00</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>24</td><!--linha 24-->
+                            <td>FR – 27</td>
+                            <td class="link"><a href="" target="_blank">Propostas Enviadas para a SPTRANS</a></td>
+                            <td>00</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>25</td><!--linha 25-->
+                            <td>FR – 28</td>
+                            <td class="link"><a href="" target="_blank">Transferencia de Linha</a></td>
+                            <td>00</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>26</td><!--linha 26-->
+                            <td>FR – 29</td>
+                            <td class="link"><a href="" target="_blank">RAI - Relatório de Aprovação Inicial</a></td>
+                            <td>00</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>27</td><!--linha 27-->
+                            <td>FR – 30</td>
+                            <td class="link"><a href="" target="_blank">Avaliação de Desempenho de Fornecedor</a></td>
+                            <td>00</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>28</td><!--linha 28-->
+                            <td>FR – 31</td>
+                            <td class="link"><a href="" target="_blank">LFQ - Lista de Fornecedores Qualificados</a></td>
+                            <td>00</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>29</td><!--linha 29-->
+                            <td>FR – 32</td>
+                            <td class="link"><a href="" target="_blank">Relação de Dispositivos de Medição</a></td>
+                            <td>00</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>30</td><!--linha 30-->
+                            <td>FR – 33</td>
+                            <td class="link"><a href="" target="_blank">Cartão Produto não Conforeme</a></td>
+                            <td>00</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>31</td><!--linha 31-->
+                            <td>FR – 34</td>
+                            <td class="link"><a href="" target="_blank">RNC - Relatório de Não Conformidade de Peças</a></td>
+                            <td>00</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>32</td><!--linha 32-->
+                            <td>FR – 34 b</td>
+                            <td class="link"><a href="" target="_blank">RNC - Relatório de Não Conformidade</a></td>
+                            <td>00</td>
+                            <td>-</td>
+                        
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <caption>!Documentação com reprodução controlada!</caption>
+                    </tfoot>
                 </table>
             </div>
         </div>
